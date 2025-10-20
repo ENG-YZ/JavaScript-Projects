@@ -7,7 +7,6 @@ Each wrong guess decreases your score, and the game gives hints to help you find
 
 ## 🚀 Live Demo
 (You can add your link here once you upload it to GitHub Pages)
-> Example: [Play the Game](https://yourusername.github.io/guess-the-number)
 
 ---
 
@@ -48,9 +47,9 @@ Each wrong guess decreases your score, and the game gives hints to help you find
 To run this project locally:
 ```bash
 # 1. Clone this repository
-git clone https://github.com/yourusername/guess-the-number.git
 
 # 2. Open the project folder
 cd guess-the-number
 
 # 3. Open index.html in your browser
+
