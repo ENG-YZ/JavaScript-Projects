@@ -4,4 +4,4 @@ This repository contains all my JavaScript projects — from beginner to advance
 
 | Project Name | Description | Live Demo |
 |---------------|-------------|------------|
-| 🎯 Guess The Number | A fun number guessing game using JS | [View](JavaScript-projects/juess-the-number) |
+| 🎯 Guess The Number | A fun number guessing game using JS | [View](JavaScript-Projects/juess-the-number) |
