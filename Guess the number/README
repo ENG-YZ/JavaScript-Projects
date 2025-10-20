@@ -37,20 +37,13 @@ Each wrong guess decreases your score, and the game gives hints to help you find
 
 ---
 
-## 📸 Screenshot
-(Add a screenshot of your game interface here)  
-> Example:  
-> ![Game Screenshot](./screenshot.png)
-
----
 
 ## 🧑‍💻 Setup Instructions
 To run this project locally:
 ```bash
 # 1. Clone this repository
-git clone https://github.com/yourusername/guess-the-number.git
-
 # 2. Open the project folder
 cd guess-the-number
 
 # 3. Open index.html in your browser
+
