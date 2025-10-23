@@ -5,3 +5,6 @@ This repository contains all my JavaScript projects — from beginner to advance
 | Project Name | Description | 
 |---------------|-------------|
 | 🎯 Guess The Number | A fun number guessing game using JS |
+|  3D cube slider     | A responsive 3D image slider built with HTML, CSS, and JS featuring stunning transitions and interactive navigation.|
+
+
