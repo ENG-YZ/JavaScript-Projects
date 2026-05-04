@@ -1,0 +1,230 @@
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Ensure all elements include padding and border in the width and height */
+}
+
+/* Base styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa; /* Default light mode background */
+    color: #333; /* Default text color */
+    transition: background-color 0.3s, color 0.3s;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure body takes at least full viewport height */
+}
+
+.dark-mode {
+    background-color: #222; /* Dark mode background */
+    color: #ddd; /* Dark mode text color */
+}
+
+/* Container styles */
+.container {
+    width: 90%;
+    max-width: 1200px; /* Limit maximum width for large screens */
+    margin: 20px auto; /* Center align container with some margin */
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    overflow: auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Heading styles */
+h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #6b6b6b;
+}
+
+/* Input container styles */
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-right: 10px;
+    transition: border-color 0.3s;
+    font-size: 1rem;
+    background-color: inherit;
+    color: inherit;
+}
+
+input:focus {
+    border-color: #28a745;
+    outline: none;
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+}
+
+/* Button styles */
+button {
+    padding: 12px 24px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+/* Task list styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+li {
+    background: #fff;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s, opacity 0.3s;
+    min-height: 50px; /* Adjust the minimum height as needed */
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+li .task-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+li button {
+    background: #dc3545;
+    border: none;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+li .editBtn {
+    background: #ffc107;
+}
+
+li button:hover {
+    transform: scale(1.1);
+}
+
+li .deleteBtn:hover {
+    background: #c82333;
+}
+
+li .editBtn:hover {
+    background: #e0a800;
+}
+
+/* Animation keyframes */
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        height: 0;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+li {
+    animation: slideIn 0.3s ease-out;
+}
+
+li.removing {
+    animation: fadeOut 0.3s forwards;
+}
+
+/* Dark mode toggle button */
+#toggleThemeBtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    z-index: 1000;
+}
+
+#toggleThemeBtn:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 80%;
+    }
+
+    li {
+        width: 90%;
+    }
+
+    input[type="text"] {
+        width: 85%;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 95%;
+    }
+
+    li {
+        width: 100%;
+    }
+
+    input[type="text"] {
+        width: 80%;
+    }
+}
